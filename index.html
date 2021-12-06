@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="Script.js" defer></script>
+    <title>Document</title>
+</head>
+<body onload="LoadPage()">
+    <div id="BodyOverLap">
+        <p id="loading">0%</p>
+        <div id="OuterLoad">
+            <div id="InnerLoad">
+                
+            </div>
+        </div>
+    </div>
+    <form action="" id="LogIn">
+    <input type="email" id="LoginEmail" placeholder="Email">
+    <input type="password" id="LoginPassword" placeholder="Password">
+    <button>Sign Up</button>
+    
+    </form>
+    <button onclick="Login()">Login</button>
+
+    <form action="" id="SignUp">
+        <input type="text" id="SignUpEmail" placeholder="Email">
+        <input type="password" id="SignUpPassword" placeholder="Password">
+        <input type="password" id="SignUpPasswordVeri" placeholder="Password">
+        </form>
+        <button onclick="SignUp()">Submit</button>
+
+</body>
+</html>

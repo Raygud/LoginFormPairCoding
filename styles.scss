@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: hotpink;
+    width: 100vw;
+    height: 100vh;
+}
+
+#BodyOverLap{
+    display: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    opacity: 100%;
+    transition: 500ms ease-in-out;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#OuterLoad{
+    display: none;
+    position: relative;
+    width: 40%;
+    height: 5%;
+    border: black solid;
+    overflow: hidden;
+}
+
+#InnerLoad{
+    position: absolute;
+    transition: 400ms ease-in-out;
+    left: -1vw;  //41vw = page load 0%
+width: 100%;
+height: 140%;
+background-color: greenyellow;
+transform: skew(30deg);
+}
+
+p {
+    position: absolute;
+    z-index: 2;
+    font-size: 24px;
+    color: black;
+}
+
+#LogIn{
+    width: 10vw;
+    display: block;
+    button{
+        border: none;
+        width: 48.5%;
+    }
+}
+
+#SignUp{
+    display: block;
+}
+
+input{
+    display: block;
+}
